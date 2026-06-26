@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../Css/Allproduct.css";
+import "../Css/AllProduct.css";
 import { useNavigate } from "react-router-dom";
 
 
