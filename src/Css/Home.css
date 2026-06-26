@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav-home{
+    padding-top: 530px;
+    padding-left: 50px;
+}
+.nav-home button{
+    padding: 30px 80px;
+    font-size: x-large;
+    border-radius: 20px;
+    background-color: rgb(241, 72, 20);
+    color: aliceblue;
+    margin: 10px;
+    border-color: rgb(241, 72, 20);
+}
+.nav-home button:hover{
+    background-color: rgb(212, 121, 16);
+}
+

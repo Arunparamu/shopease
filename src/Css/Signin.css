@@ -1,0 +1,81 @@
+
+
+.signin-container {
+  margin: 0;
+  font-family: Arial, sans-serif;
+   background-color: #1e293b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signin-form {
+  background: white;
+  padding: 30px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.signin-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signin-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.signin-form input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.signin-form button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-form button:hover {
+  background: #0056b3;
+}
+
+.signin-form button:disabled {
+  background: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.signin-container > button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signin-container > button:hover {
+  background: #218838;
+}
