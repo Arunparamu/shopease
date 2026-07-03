@@ -40,7 +40,7 @@ function Cart() {
   const deletetocart = async (id) => {
     console.log(id);
     const response = await fetch(
-      `http://localhost:8080/cart/deletetocart/${id}`,
+      `https://ecom-egvy.onrender.com/cart/deletetocart/${id}`,
       {
         method: "DELETE",
       },
