@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom";
 function CheckOut() {
   const [address, setAddress] = useState("");
   const[name,setName]=useState("");
+
   const handlesubmit = async (e) => {
-    //e.preventDefault();
+    e.preventDefault();
 
     const userid = Number(localStorage.getItem("userid"));
 
@@ -22,6 +23,15 @@ function CheckOut() {
         username:name,
       }),
     });
+
+    if (response.ok) {
+      alert("order placed successfully");
+      navigate("/user/cart/checkout/ordersuccess");
+    }
+    else
+    {
+      alert("order failed");
+    }
   };
 
   //logout
@@ -39,10 +49,6 @@ function CheckOut() {
   //cartpage
   const cartpage=()=>{
     navigate("/user/cart")
-  };
-
-  const ordersuccess=()=>{
-    navigate("/user/cart/checkout/ordersuccess");
   };
 
   return (
@@ -79,7 +85,7 @@ function CheckOut() {
           onChange={(e) => setAddress(e.target.value)}
         ></input>
         <br/>
-        <button onClick={ordersuccess} type="submit">Place Order</button>
+        <button type="submit">Place Order</button>
       </form>
     </div>
     </div>

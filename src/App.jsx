@@ -9,6 +9,7 @@ import AllProducts from "./Components/AllProducts";
 import Cart from "./Components/Cart"
 import CheckOut from "./Components/CheckOut";
 import OrderSuccess from "./Components/OrderSuccess";
+import ViewOrders from "./Components/ViewOrders";
 import { BrowserRouter,Route,Routes,Link} from "react-router-dom";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path="/user/cart" element={<Cart/>}/>
               <Route path="/user/cart/checkout" element={<CheckOut/>}/>
               <Route path="/user/cart/checkout/ordersuccess" element={<OrderSuccess/>}/>
+              <Route path="/user/vieworders" element={<ViewOrders/>}/>
           </Routes>
     </BrowserRouter>
   );

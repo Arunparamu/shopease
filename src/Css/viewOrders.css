@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1976d2;
+  color: white;
+  padding: 15px 40px;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: white;
+  color: #1976d2;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  background: #1565c0;
+  color: white;
+}
+
+/* Orders */
+
+.orders-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+}
+
+.order-image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 25px;
+}
+
+.order-details {
+  flex: 1;
+}
+
+.order-details h3 {
+  margin-top: 0;
+  color: #1976d2;
+}
+
+.order-details p {
+  margin: 8px 0;
+  color: #555;
+}

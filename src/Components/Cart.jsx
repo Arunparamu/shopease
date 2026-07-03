@@ -6,12 +6,10 @@ import CheckOut from "./CheckOut";
 function Cart() {
   const userid = localStorage.getItem("userid");
   const [cart, setCart] = useState([]);
-  console.log(userid);
   useEffect(() => {
     fetch(`https://ecom-egvy.onrender.com/cart/gettocart/${userid}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setCart(data);
       });
   }, []);
@@ -42,7 +40,7 @@ function Cart() {
   const deletetocart = async (id) => {
     console.log(id);
     const response = await fetch(
-      `https://ecom-egvy.onrender.com/cart/deletetocart/${id}`,
+      `http://localhost:8080/cart/deletetocart/${id}`,
       {
         method: "DELETE",
       },
@@ -55,6 +53,11 @@ function Cart() {
   //navi to checkout page
   const checkout=()=>{
     navigate("/user/cart/checkout");
+  };
+
+  //orderpage
+  const orderpage = () => {
+    navigate("/user/vieworders");
   };
 
   return (
@@ -70,6 +73,9 @@ function Cart() {
           </button>
           <button className="nav-btn" onClick={cartpage}>
             Cart
+          </button>
+          <button className="nav-btn" onClick={orderpage}>
+            Orders
           </button>
           <button className="nav-btn" onClick={logout}>
             Logout
